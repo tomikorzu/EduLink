@@ -3,357 +3,349 @@
 
 /* Tipo De Letra  */
 body {
-    font-family: "Open Sans", sans-serif;
-    color: #272829;
-  }
-  
-  /* Header */
-  
-  /* Esta es la config de la barra de nav */
-  #header {
-    position: fixed;
-    background: rgba(0, 0, 0, 0.6);
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    height: 80px;
-    width: 100%;
-  }
-  
-  
-  /* Config Titulo(Tomas Korzusehec)*/
-  #header .profile h1 {
-    /* Tamaño*/
-    font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+}
 
-    color: #fff !important;
-    z-index: 100000;
-    /* Grosor */
-    font-weight: 400;
-    /* Centrar */
-    margin-left: 150px;
-    margin-top: 20px;
-    /* Fuente */
-    font-family: "Poppins", sans-serif;
-  }
-  
-  
-  /*Personalización Titulo color*/
-  #header .profile h1 a
-  {
-    color: #fff !important; 
-    text-decoration: none;
-  }
-  /* Idem arriba(solo cuando el mouse esta arriba) */
-  #header .profile h1 a:hover {
-    color: #a8a9b4 !important;
-    text-decoration:none;
-  }
-  
+/* Header */
 
+/* Esta es la config de la barra de nav */
+#header {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  height: 80px;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+
+/* Config Titulo(Tomas Korzusehec)*/
+#header .perfil h1 {
+  /* Tamaño*/
+  font-size: 30px;
+
+  color: #fff;
+  z-index: 1000;
+  /* Grosor */
+  font-weight: 400;
+  /* Centrar */
+  margin-left: 150px;
+  margin-top: 20px;
+  /* Fuente */
+  font-family: "Poppins", sans-serif;
+  z-index: 1000;
+}
+
+
+/*Personalización Titulo color*/
+#header .perfil h1 a
+{
+  z-index: 1000;
+  color: #fff; 
+  text-decoration: none;
+}
+/* Idem arriba(solo cuando el mouse esta arriba) */
+#header .perfil h1 a:hover {
+  color: #b18c4e !important;
+  text-decoration:none;
+}
+
+#main{
+  margin-top: 80px;
+}
+
+
+
+/* Navegación Escritorio (Inicio, sobre mi, etc)*/
+
+
+#header .perfil {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#nav-page li{
+  color: #fff;
+  margin-top: 27px;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+#nav-page li:hover{
+  color: #b18c4e;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* margen exte iconos y enlaces */
+i{
+  margin-right: 5px;
+}
+
+/* Telefono icon */
+.bi-telephone-fill::before { content: "\f5b4"; }
+.bi-telephone-forward-fill::before { content: "\f5b5"; }
+.bi-telephone-forward::before { content: "\f5b6"; }
+.bi-telephone-inbound-fill::before { content: "\f5b7"; }
+.bi-telephone-inbound::before { content: "\f5b8"; }
+.bi-telephone-minus-fill::before { content: "\f5b9"; }
+.bi-telephone-minus::before { content: "\f5ba"; }
+.bi-telephone-outbound-fill::before { content: "\f5bb"; }
+.bi-telephone-outbound::before { content: "\f5bc"; }
+.bi-telephone-plus-fill::before { content: "\f5bd"; }
+.bi-telephone-plus::before { content: "\f5be"; }
+.bi-telephone-x-fill::before { content: "\f5bf"; }
+.bi-telephone-x::before { content: "\f5c0"; }
+.bi-telephone::before { content: "\f5c1"; }
+
+/*--------------------------------------------------------------
+# inicio Section
+--------------------------------------------------------------*/
+
+#inicio {
+  /* Pone el ancho y alto al 100% */
+  width: 100%;
+  height: 100vh;
+  /* Centra la imágen en modo celu */
+  margin-top: -80px;
+  background: url("../img/TK.png");
+  /* La imagen cubrirá todo el contenedor */
+  background-size: cover;
+}
+
+/*Tamaño h1 "TomasKorzusehec"*/
+#inicio h1 {
+  margin: 0 0 10px 0;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff !important;
+  padding-top: 200px;
+  padding-left: 100px;
+  position: absolute;
+}
+
+#inicio strong{
+  color: #b18c4e;
+}
+
+#inicio h2 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  padding-top: 270px;
+  padding-left: 100px;
+  position: absolute;
+}
+
+/* Sombreado imagen*/
+#inicio:before {
+  content: "";
+  /* Se pone rgba para que haya transparencia */
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: -40px;
+  /* Solo cubre la imagen */
+  position: absolute;
+  /*Altura y ancho*/
+  width: 100%;
+  height: 100vh;
+}
+
+/*Ubicación h1 "TomasKorzusehec"*/
+#tomas .tomas-container {
   
-  /* Navegación Escritorio (Inicio, sobre mi, etc)*/
-  .nav-menu {
-    padding: 30px 0 0 0;
-  }
-  
-  .nav-menu * {
-    margin: 0px;
-    padding: 3px;
-    list-style: none;
-  }
-  
-  
-  
-  /* Enlaces Navegador(Sobre Mi, Educación, etc) */
-  .nav-menu a,
-  .nav-menu a:focus {
-    display: flex;
-    align-items: center;
-    color: #a8a9b4;
-    padding: 12px 15px;
-    margin-bottom: 0px;
-    transition: 0.3s;
-    font-size: 15px;
-  }
-  
-  /* Iconos navegador */
-  .nav-menu a i,
-  .nav-menu a:focus i {
-    font-size: 24px;
-    padding-right: 8px;
-    color: #6f7180;
-  }
-  
-  /* Iconos navegador color letra_(mouse arriba) */
-  .nav-menu a:hover,
-  .nav-menu .active,
-  .nav-menu .active:focus,
-  .nav-menu li:hover>a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  /* Iconos navegador color icono_(mouse arriba) */
-  .nav-menu a:hover i,
-  .nav-menu .active i,
-  .nav-menu .active:focus i,
-  .nav-menu li:hover>a i {
-    color: #1f5297;
-  }
-  
-  /* Icono de Cruz en nav */
-  .bi-x-circle-fill::before { content: "\f622"; }
-  .bi-x-circle::before { content: "\f623"; }
-  .bi-x-diamond-fill::before { content: "\f624"; }
-  .bi-x-diamond::before { content: "\f625"; }
-  .bi-x-octagon-fill::before { content: "\f626"; }
-  .bi-x-octagon::before { content: "\f627"; }
-  .bi-x-square-fill::before { content: "\f628"; }
-  .bi-x-square::before { content: "\f629"; }
-  .bi-x::before { content: "\f62a"; }
-  
-  /* ICono de lista en nav */
-  .bi-list-check::before { content: "\f473"; }
-  .bi-list-nested::before { content: "\f474"; }
-  .bi-list-ol::before { content: "\f475"; }
-  .bi-list-stars::before { content: "\f476"; }
-  .bi-list-task::before { content: "\f477"; }
-  .bi-list-ul::before { content: "\f478"; }
-  .bi-list::before { content: "\f479"; }
-  
-  /* Oculta cualquier cosa que desborde del header */
-  .mobile-nav-active {
-    overflow: hidden;
-  }
-  
-  /* Hace que aparezca el nav en el margen izquierdo */
-  .mobile-nav-active #header {
-    left: 0px;
-  }
-  
-  /*HASTA ACA CORRECCION*/ 
-  
-  /*--------------------------------------------------------------
-  # tomas Section
-  --------------------------------------------------------------*/
-  #tomas {
-    /* Pone el ancho y alto al 100% */
-    width: 100%;
-    height: 100vh;
-    /* Centra la imágen en modo celu */
-    background: url("../img/FotoYo.jpeg") top center;
-    /* La imagen cubrirá todo el contenedor */
-    background-size: cover;
-  }
-  
-  /* Sombreado imagen*/
-  #tomas:before {
-    content: "";
-    /* Se pone rgba para que haya transparencia */
-    background: rgba(0, 0, 0, 0.6);
-    /* Solo cubre la imagen */
-    position: absolute;
-    /*Altura y ancho*/
-    width: 100%;
-    height: 100vh;
-  }
-  
-  /*Ubicación h1 "TomasKorzusehec"*/
-  #tomas .tomas-container {
+  position: relative;
+  min-width: 300px;
+  margin-top: -250px;
+  margin-left: 550px;
+}
+
+
+
+/* Tamaño h1 TomasKorzusehec cuando se entra a pantalla donde no esta el nav */
+@media (max-width: 1199px) {
+  #tomas h1{
     
-    position: relative;
-    min-width: 300px;
-    margin-top: -250px;
-    margin-left: 550px;
+      font-size: 28px;
+      line-height: 36px;
   }
-  
-  /*Tamaño h1 "TomasKorzusehec"*/
-  #tomas h1 {
-    margin: 0 0 10px 0;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: px;
-    color: #fff;
-  }
-  
-  /* Tamaño h1 TomasKorzusehec cuando se entra a pantalla donde no esta el nav */
-  @media (max-width: 1199px) {
-    #tomas h1{
-      
-        font-size: 28px;
-        line-height: 36px;
-    }
-  }
-  
-  
-  /*--------------------------------------------------------------
-  # Sections General
-  --------------------------------------------------------------*/
-  
-  /* Separacion títulos */
-  section {
-    padding: 40px 0;
-    overflow: hidden;
-  }
-  
-  /* Color fondo Section */
-  .section-bg {
-    background: rgba(14, 57, 75, 0.3);
-  }
-  
-  /* Separación Sections title */
-  .section-title {
-    padding-bottom: 30px;
-  }
-  
-  /* Config h2 titulos */
-  .section-title h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    color: #122f57;
-  }
-  
-  /* Barrita h2 config */
-  .section-title h2::after {
-    /* Frase en blanco para que aparezca sin texto */
-    content: "";
-    position: absolute;
-    /* Tamaño */
-    width: 75px;
-    height: 4px;
-    background: #122f57;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .section-title p {
-    margin-bottom: 0;
-    color: #0e2442;
-  }
-  
-  /*
-  #
-   Sobre mi
-  *
-  /
-  
-  /* Subtitulo about */
-  .about .content h3 {
-    /* Tamaño letra */
-    font-weight: 700;
-    font-size: 26px;
-    color: #173b6c;
-  }
-  
-  /* Listas */
-  .about .content ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  /* Listas */
-  .about .content ul li {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Separacion negrita */
-  .about .content ul strong {
-    margin-right: 10px;
-  }
-  
-  
-  /*--------------------------------------------------------------
-  # Footer
-  --------------------------------------------------------------*/
-  
-  
-  #footer {
-    background: url("../img/FotoYo.jpeg") top center no-repeat;
-    background-size: cover;
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
-    padding: 80px 0;
-    position: relative;
-  }
-  
-  #footer::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-  }
-  
-  #footer .container {
-    position: relative;
-  }
-  
-  /*Personalización Titulo color*/
-  #footer h3 a{
-    right: 100px;
-    margin: 0 0 10px 0;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: px;
-    color: #fff;
-    text-decoration:none;
-  }
-  
-  #footer h3 a:hover{
-    color: #122f57;
-    text-decoration:none;
-  }
-  
-  #footer .social-links {
-    margin: 0 0 40px 0;
-  }
-  
-  /*bueno*/
-  #footer .social-links a {
-    /* Tamaño iconos */
-    font-size: 18px;
-    /* Para que este uno seguido del otro y en línea */
-    display:inline-block;
-    /* color fondo */
-    background: #333;
-    /* Color icono */
-    color: #fff;
-    /* Altura Iconos */
-    line-height: 0px;
-    /* ajuste icon Altura y Ancho */
-    padding: 8px 0px;
-    /* Margen entre cada icono */
-    margin-right: 10px;
-    /*Circularidad borde*/
-    border-radius: 20px;
-    /*Tamaño borde Ancho y Altura*/
-    width: 38px;
-    height: 38px;
-    /* Transición */
-    transition: 0.5s;
-  }
-  
-  #footer .social-links a:hover {
-    background: #1f5297;
-    color: #111;
-  }
-  
-  
-  /* extras */
-  
-  .margintopbutton2{
-    margin-top: 25px;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+
+/* Separacion títulos */
+section {
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+/* Color fondo Section */
+.section-bg {
+  background: rgba(14, 57, 75, 0.3);
+}
+
+/* Separación Sections title */
+.section-title {
+  padding-bottom: 30px;
+}
+
+/* Config h2 titulos */
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #122f57;
+}
+
+/* Barrita h2 config */
+.section-title h2::after {
+  /* Frase en blanco para que aparezca sin texto */
+  content: "";
+  position: absolute;
+  /* Tamaño */
+  width: 75px;
+  height: 4px;
+  background: #122f57;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+  color: #0e2442;
+}
+
+/*
+#
+ Sobre mi
+*
+/
+
+/* Subtitulo about */
+.about .content h3 {
+  /* Tamaño letra */
+  font-weight: 700;
+  font-size: 26px;
+  color: #173b6c;
+}
+
+/* Listas */
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Listas */
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* Separacion negrita */
+.about .content ul strong {
+  margin-right: 10px;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+
+#footer {
+  background: url("../img/FotoYo.jpeg") top center no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 80px 0;
+  position: relative;
+}
+
+#footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#footer .container {
+  position: relative;
+}
+
+/*Personalización Titulo color*/
+#footer h3 a{
+  right: 100px;
+  margin: 0 0 10px 0;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: px;
+  color: #fff;
+  text-decoration:none;
+}
+
+#footer h3 a:hover{
+  color: #122f57;
+  text-decoration:none;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+/*bueno*/
+#footer .social-links a {
+  /* Tamaño iconos */
+  font-size: 18px;
+  /* Para que este uno seguido del otro y en línea */
+  display:inline-block;
+  /* color fondo */
+  background: #333;
+  /* Color icono */
+  color: #fff;
+  /* Altura Iconos */
+  line-height: 0px;
+  /* ajuste icon Altura y Ancho */
+  padding: 8px 0px;
+  /* Margen entre cada icono */
+  margin-right: 10px;
+  /*Circularidad borde*/
+  border-radius: 20px;
+  /*Tamaño borde Ancho y Altura*/
+  width: 38px;
+  height: 38px;
+  /* Transición */
+  transition: 0.5s;
+}
+
+#footer .social-links a:hover {
+  background: #1f5297;
+  color: #111;
+}
+
+
+/* extras */
+
+.margintopbutton2{
+  margin-top: 25px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
