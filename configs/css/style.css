@@ -69,6 +69,14 @@ body {
   display: flex;
 }
 
+/* Barra de navegación, cambio de color del link en cuanto a donde esta el usuario */
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #d9ba85;
+}
+
 #nav-page li{
   color: #fff;
   margin-top: 27px;
