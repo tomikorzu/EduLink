@@ -33,7 +33,7 @@ body {
   /* Grosor */
   font-weight: 400;
   /* Centrar */
-  margin-left: 150px;
+  margin-left: 140px;
   margin-top: 20px;
   /* Fuente */
   font-family: "Poppins", sans-serif;
@@ -42,14 +42,24 @@ body {
 
 
 /*Personalización Titulo color*/
+#header .perfil h1 i {
+  color: #FFBC00;
+}
+
+#header .perfil h1 span {
+  color: #008CFF
+}
+
 #header .perfil h1 a
 {
+  font-family: "bold italic", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
   z-index: 1000;
-  color: #fff; 
+  color: #FFBC00; 
   text-decoration: none;
 }
 /* Idem arriba(solo cuando el mouse esta arriba) */
-#header .perfil h1 a:hover {
+#header .perfil h1:hover a, h1:hover i, h1:hover span {
   color: #b18c4e !important;
   text-decoration:none;
 }
@@ -74,19 +84,17 @@ body {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #d9ba85;
+  color: #92b1f5;
 }
 
 #nav-page li{
   color: #fff;
   margin-top: 27px;
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
-#nav-page li:hover{
-  color: #b18c4e;
-}
+
 
 a{
   text-decoration: none;
@@ -98,20 +106,60 @@ i{
 }
 
 /* Telefono icon */
-.bi-telephone-fill::before { content: "\f5b4"; }
-.bi-telephone-forward-fill::before { content: "\f5b5"; }
-.bi-telephone-forward::before { content: "\f5b6"; }
-.bi-telephone-inbound-fill::before { content: "\f5b7"; }
-.bi-telephone-inbound::before { content: "\f5b8"; }
-.bi-telephone-minus-fill::before { content: "\f5b9"; }
-.bi-telephone-minus::before { content: "\f5ba"; }
-.bi-telephone-outbound-fill::before { content: "\f5bb"; }
-.bi-telephone-outbound::before { content: "\f5bc"; }
-.bi-telephone-plus-fill::before { content: "\f5bd"; }
-.bi-telephone-plus::before { content: "\f5be"; }
-.bi-telephone-x-fill::before { content: "\f5bf"; }
-.bi-telephone-x::before { content: "\f5c0"; }
+
 .bi-telephone::before { content: "\f5c1"; }
+
+/* Icono Estrella */
+.bi-star::before { content: "\f586"; }
+
+/* Icono de Herramienta */
+.bi-tools::before { content: "\f5db"; }
+
+
+/*--------------------------------------------------------------
+# Sign y Log in
+--------------------------------------------------------------*/
+
+.sign-in {
+  margin-left: 50px;
+  margin-top: 12.5px ;
+  border: 2px solid #FFBC00;
+  color: #fff;
+  border-radius: 50px;
+  padding: 15px 20px;
+  /* Texto en mayusculas */
+  text-transform:uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.sign-in:hover {
+  background: #FFBC00;
+  color: #000;
+}
+
+.log-in {
+  margin-left: 10px;
+  margin-top: 12.5px ;
+  border: 2px solid #008CFF;
+  color: #fff;
+  border-radius: 50px;
+  padding: 15px 20px;
+  text-transform:uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.log-in:hover {
+  background: #008CFF;
+  color: #000;
+}
+
+
 
 /*--------------------------------------------------------------
 # inicio Section
@@ -123,7 +171,7 @@ i{
   height: 100vh;
   /* Centra la imágen en modo celu */
   margin-top: -80px;
-  background: url("../img/TK.png");
+  background: url("../img/EduLink-Foto.png");
   /* La imagen cubrirá todo el contenedor */
   background-size: cover;
 }
@@ -140,7 +188,7 @@ i{
 }
 
 #inicio strong{
-  color: #b18c4e;
+  color: #92b1f5;
 }
 
 #inicio h2 {
