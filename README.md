@@ -1,6 +1,5 @@
 # EduLink
 
-## Descripción
 EduLink es una plataforma educativa diseñada para mejorar la comunicación y la gestión en entornos escolares. 
 Ofrece una solución integral para estudiantes, profesores, preceptores y padres, 
 con el objetivo de modernizar el sistema educativo y facilitar la colaboración 
