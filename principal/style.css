@@ -1,0 +1,159 @@
+    body {
+        margin: 0;
+        background-color: #2B3035;
+    }
+
+    a {
+        text-decoration: none;
+
+    }
+
+    
+    /* ---- Header ---- */
+
+    #header {
+        position:fixed; 
+        top: 0;
+        left: 0;
+        font-family: sans-serif;
+        font-weight: 600;
+        color: #e2e2e2;
+        width: 100%;
+        height: 80px;
+        background-color: rgb(0, 0, 0, 0.6);
+        align-items: center;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .img {
+        background: url(../img/edulink-text.png) center /contain no-repeat;
+        width: 100px;
+        height: 100px;
+        padding: 0 20px;
+        min-width: 70px;
+        margin: 0px 50px;
+    }
+
+    .enlaces {
+        margin: 0px 20px;
+        color: #fff;
+    }
+
+    .enlaces:hover{
+        color: #d3d7db;
+    }
+
+    .separador-btn{
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .btn {
+        height: 50px;
+        width: 180px;
+        border-radius: 50px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .sign {
+        margin-left: 40px;
+        border: 2px solid #FFBC00;
+        transition: 0.5s;
+    }
+
+    .sign:hover {
+        color: #000;
+        background-color: #FFBC00;
+    }
+
+    .log {
+        transition: .5s;
+        border: 2px solid #008CFF;
+    }
+
+    .log:hover{
+        color: #000;
+        background-color: #008CFF;
+    }
+
+
+    /* ---- Main ---- */
+    #main-container {
+        width: 100%;
+        height: 100%; 
+    }
+    
+    #main-container::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: url(../img/el-logo-movil-sf.png) bottom / cover no-repeat;    
+        opacity: 0.8;
+        z-index: -1; /* Asegura que la imagen esté detrás del contenido */
+    }
+
+    /* ---- Inicio ---- */
+
+    #inicio{
+        width: 100%;
+        height: 100vh;
+        margin-top: 80px;
+    }
+
+    /* ---- Nosotros ---- */
+    #nosotros{
+        width: 100%;
+        height: 100vh;
+        margin-top: 80px;
+    }
+
+    /* ---- Funcionalidades ---- */
+    #funcionalidades{
+        width: 100%;
+        height: 100vh;
+        margin-top: 80px;
+    }
+
+    /* ---- Equipo ---- */
+    #equipo{
+        width: 100%;
+        height: 100vh;
+        margin-top: 80px;
+    }
+
+    /* ---- Contacto ---- */
+    #contacto{
+        width: 100%;
+        height: 100vh;
+        margin-top: 80px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .back {
+        margin-top: 200px;
+    }

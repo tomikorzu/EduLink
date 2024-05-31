@@ -1,134 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>EduLink</title>
 
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <!-- Icono pestaña -->
+    <link href="img/icon.png" rel="icon">
+    <link href="img/icon.png" rel="apple-touch-icon">
 
-     <!-- Icono pestaña -->
-    <link href="configs/img/EduLink-logo-final.png" rel="icon">
-    <link href="configs/img/EduLink-logo-final.png" rel="apple-touch-icon">
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="/principal/style.css">
+    <link rel="stylesheet" href="aos/aos.css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-    <!-- Links CSS -->
-    <!--Transiciones--><link rel="stylesheet" href="configs/estilos/aos/aos.css">
-    <!--Diseño--><link rel="stylesheet" href="configs/estilos/diseño/diseño.css">
-    <!--ICONOS--><link rel="stylesheet" href="configs/estilos/nav-icons/nav-icons.css">
-    <!--Diseños Iconos--><link rel="stylesheet" href="configs/estilos/boxicons/css/boxicons.css">
-
-    <!--CSS Principal-->
-    <link rel="stylesheet" href="configs/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 
 </head>
+
 <body>
-    <!-- === Navegador celular === -->
-    <i id="mobileNavToggle" class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-    <!-- === Comienzo HEADER === -->
+    <!-- -----Header----- -->
+    
     <header id="header">
-        <div class="d-flex flex-column">
-            <div class="perfil">
-                <h1 data-aos="fade-in" data-aos-duration="50"><i class="bi bi-star"><a href="index.html"><strong>Edu<span>Link</span></strong></a></i></h1>
-                
-                <!-- De JS es el id="navbar" y .scrollto / active-->
-                <nav id="navbar" class="navbar">
-                    <ul id="nav-page">
-                        <li><a href="#inicio" class="scrollto active"><i class="bx bx-home"></i><span>Inicio</span></a></li>
-                        <li><a href="#nosotros" class="scrollto"><i class="bx bx-user"></i><span>Sobre Nosotros</span></a></li>
-                        <li><a href="#funcionalidades" class="scrollto"><i class="bi bi-tools"></i><span>Funcionalidades</span></a></li>
-                        <li><a href="#contactanos" class="scrollto"><i class="bi bi-telephone"></i><span>Contactos</span></a></li>
-                    </ul>
-                </nav>
-                <a href="#registrarse" class="sign-in scrollto">Registrarse</a>
-                <a href="../EduLink/sign-in/sign-in.html" class="log-in scrollto">Iniciar Sesión</a>
-            </div>
+        <div class="img" data-aos="fade" data-aos-duration="50"></div>
+        <a class="enlaces" href="#inicio">Inicio</a>
+        <a class="enlaces" href="#nosotros">Nosotros</a>
+        <a class="enlaces" href="#funcion">Funcionalidades</a>
+        <a class="enlaces" href="#equipo">Equipo</a>
+        <a class="enlaces" href="#contacto">Contactanos</a>
+        <div class="separador-btn">
+            <a class="btn sign" href="/sign/index.html">Iniciar Sesión</a>
         </div>
-        
-    </header><!-- End Header -->
+        <div class="separador-btn">
+            <a class="btn log" href="/sign-in/sign-in.html">Registrarse</a>
+        </div>
+    </header>
+    
+    <main id="main-container">
 
-    <main id="main">
-        <!-- === Inicio === -->
+        <!-- -----Inicio----- -->
+        <div id="inicio" data-aos="fade-right" data-aos-duration="50">
+            <h1>1 HOLAAAA Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ea magnam necessitatibus perferendis illo sapiente, laboriosam minima earum. Eius autem a, incidunt ea debitis sapiente error minima quia. Ullam, velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rem sit, id aut nam consectetur ea asperiores cumque in similique numquam, obcaecati nobis blanditiis, modi cum quaerat aperiam excepturi minus. </h1>
+        </div>
 
-        <section id="inicio">
-            <div data-aos="fade-right" data-aos-duration="50">
-                <h1>Bienvenido a <strong>EduLink</strong></h1>
-                <h2>Somos una plataforma educativa diseñada para mejorar la comunicación y gestión en entornos escolares.
-                </h2>
-            </div>
-        </section>
-      
-        <!-- === nosotros === -->
-        <section id="nosotros">
-            <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-duration="50">
-                <div class="row">
-                  <div class="col-lg-8">
-                    <h1>Welcome to <span>EduLink</span></h1>
-                    <h2>Delivering great food for more than 18 years!</h2>
-          
-                    <div class="btns">
-                      <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
-                      <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Book a Table</a>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-duration="50">
-                    <a href="https://www.youtube.com/watch?v=u6BOC7CDUTQ" class="glightbox play-btn"></a>
-                  </div>
-          
-                </div>
-              </div>
-        </section>
+        <!-- -----Nosotros----- -->
+        <div id="nosotros" data-aos="fade-up" data-aos-duration="50">
+            <h1>2 HOLAAAA Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ea magnam necessitatibus perferendis illo sapiente, laboriosam minima earum. Eius autem a, incidunt ea debitis sapiente error minima quia. Ullam, velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rem sit, id aut nam consectetur ea asperiores cumque in similique numquam, obcaecati nobis blanditiis, modi cum quaerat aperiam excepturi minus. </h1>
+        </div>
 
-        <!-- === Autor === -->
-        <section id="#autor">
-            <div class="container" data-aos="fade-up">
+        <!-- -----Funcionalidades----- -->
+        <div id="funcionalidades" data-aos="fade-up" data-aos-duration="50">
+            <h1>3 HOLAAAA Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ea magnam necessitatibus perferendis illo sapiente, laboriosam minima earum. Eius autem a, incidunt ea debitis sapiente error minima quia. Ullam, velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rem sit, id aut nam consectetur ea asperiores cumque in similique numquam, obcaecati nobis blanditiis, modi cum quaerat aperiam excepturi minus. </h1>
+        </div>
 
-                <div class="row">
-                  <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="about-img">
-                      <img src="assets/img/about.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-                    <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                    <p class="fst-italic">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua.
-                    </p>
-                    <ul>
-                      <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                      <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                      <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                    </ul>
-                    <p>
-                      Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                      culpa qui officia deserunt mollit anim id est laborum
-                    </p>
-                  </div>
-                </div>
-        
-              </div>
-        </section>
+        <!-- -----Equipo----- -->
+        <div id="equipo" data-aos="fade-up" data-aos-duration="50">
+            <h1>4 HOLAAAA Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ea magnam necessitatibus perferendis illo sapiente, laboriosam minima earum. Eius autem a, incidunt ea debitis sapiente error minima quia. Ullam, velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rem sit, id aut nam consectetur ea asperiores cumque in similique numquam, obcaecati nobis blanditiis, modi cum quaerat aperiam excepturi minus. </h1>
+        </div>
 
-        <!-- === Contacto  === -->
-        <section id="contacto">
-
-        </section>
-
+        <!-- -----Contacto----- -->
+        <div id="contacto" data-aos="fade-up" data-aos-duration="50">
+            <h1>5 HOLAAAA Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ea magnam necessitatibus perferendis illo sapiente, laboriosam minima earum. Eius autem a, incidunt ea debitis sapiente error minima quia. Ullam, velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rem sit, id aut nam consectetur ea asperiores cumque in similique numquam, obcaecati nobis blanditiis, modi cum quaerat aperiam excepturi minus. </h1>
+        </div>
     </main>
 
+    <!-- JS Links -->
+    <script src="aos/aos.js"></script>
+    <script src="/principal/main.js"></script>
 
-
-    <!--Links JS-->
-    <script src="configs/estilos/aos/aos.js"></script>
-
-    <!--JS Principal-->
-    <script src="configs/js/main.js"></script>
 </body>
+
+
 </html>
