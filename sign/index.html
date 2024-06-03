@@ -20,7 +20,7 @@
 <body>
 
     <!-- Header -->
-    <header id="header">
+    <header id="header" data-aos="fade-right" data-aos-duration="50">
         <nav class="navbar">
             <a class="back" href="../index.html">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left"
@@ -33,23 +33,26 @@
     </header>
     
     <!-- Container -->
-    <section id="sign">
-        <div class="img" data-aos="fade" data-aos-duration="50"></div>
+    <section id="sign" data-aos="fade" data-aos-duration="50">
+        <div class="img"></div>
 
         <h1>Iniciar Sesión</h1>
 
         <form id="form">
             <div class="input-container">
-                <input class="input1" id="mail" type="email" placeholder="name@example.com">
+                <input class="input1" id="mail" type="email" placeholder="">
                 <label for="mail">Teléfono o Correo Electrónico</label>
             </div>
             <div class="input-container">
-                <input class="input2" id="pswrd" type="password" placeholder="Contraseña">
+                <input class="input2" id="pswrd" type="password" placeholder="">
                 <label for="pswrd">Contraseña</label>
             </div>
             <div class="checkbox-container">
                 <input type="checkbox" id="check" >
                 <label class="checkbox" for="check">Recordarme</label>
+            </div>
+            <div class="btn-container">
+                <button class="btn">Entrar</button>
             </div>
         </form>
     </section>
